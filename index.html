@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery Showcase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./icon.png" type="image/png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#" class="logo">Gallery<span>.</span></a>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Modern Project Gallery</h1>
+            <p>A showcase of innovative web development projects with cutting-edge design and functionality. This single-page website demonstrates advanced CSS techniques, JavaScript interactivity, and responsive design principles.</p>
+            <div class="hero-btns">
+                <a href="#gallery" class="btn">View Gallery</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="code-display">
+                <div class="code-line"><span class="code-keyword">const</span> <span class="code-string">project</span> = {</div>
+                <div class="code-line">&nbsp;&nbsp;name: <span class="code-string">"Gallery Showcase"</span>,</div>
+                <div class="code-line">&nbsp;&nbsp;technologies: [<span class="code-string">"HTML5"</span>, <span class="code-string">"CSS3"</span>, <span class="code-string">"JavaScript"</span>],</div>
+                <div class="code-line">&nbsp;&nbsp;features: [<span class="code-string">"Responsive"</span>, <span class="code-string">"Interactive"</span>, <span class="code-string">"Modern UI"</span>],</div>
+                <div class="code-line">&nbsp;&nbsp;status: <span class="code-string">"Completed"</span></div>
+                <div class="code-line">};</div>
+                <div class="code-line"><span class="code-comment">// Showcasing modern web development</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Fully Responsive</h3>
+                    <p>Adapts seamlessly to all screen sizes from mobile to desktop, ensuring optimal viewing experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Modern Design</h3>
+                    <p>Clean, contemporary UI with thoughtful color schemes, typography, and visual hierarchy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Performance</h3>
+                    <p>Optimized code and assets for fast loading times and smooth interactions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Clean Code</h3>
+                    <p>Well-structured, semantic HTML, modular CSS, and efficient JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Project Gallery</h2>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">UI/UX</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="web">
+                    <div class="gallery-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured online store with shopping cart, user authentication, and payment processing.</p>
+                        <div class="gallery-tags">
+                            <span class="gallery-tag">React</span>
+                            <span class="gallery-tag">Node.js</span>
+                            <span class="gallery-tag">MongoDB</span>
+                        </div>
+                        <div class="gallery-links">
+                            <a href="#" class="gallery-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="gallery-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="mobile">
+                    <div class="gallery-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Fitness Tracker App</h3>
+                        <p>A mobile application for tracking workouts, nutrition, and fitness progress with charts.</p>
+                        <div class="gallery-tags">
+                            <span class="gallery-tag">React Native</span>
+                            <span class="gallery-tag">Firebase</span>
+                            <span class="gallery-tag">Redux</span>
+                        </div>
+                        <div class="gallery-links">
+                            <a href="#" class="gallery-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="gallery-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="design">
+                    <div class="gallery-image">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>UI Design System</h3>
+                        <p>A comprehensive design system with reusable components, patterns, and style guidelines.</p>
+                        <div class="gallery-tags">
+                            <span class="gallery-tag">Figma</span>
+                            <span class="gallery-tag">CSS3</span>
+                            <span class="gallery-tag">Sass</span>
+                        </div>
+                        <div class="gallery-links">
+                            <a href="#" class="gallery-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="gallery-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="web">
+                    <div class="gallery-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>A responsive dashboard for data visualization with interactive charts and real-time updates.</p>
+                        <div class="gallery-tags">
+                            <span class="gallery-tag">Vue.js</span>
+                            <span class="gallery-tag">D3.js</span>
+                            <span class="gallery-tag">Express</span>
+                        </div>
+                        <div class="gallery-links">
+                            <a href="#" class="gallery-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="gallery-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About This Project</h2>
+            <div class="about-container">
+                <div class="about-content">
+                    <p>This single-page website was created to demonstrate modern web development techniques and design principles. It showcases a clean, responsive layout with interactive elements and smooth animations.</p>
+                    <p>The project utilizes semantic HTML5, advanced CSS3 features including Flexbox and Grid, and vanilla JavaScript for interactivity. It follows best practices for performance, accessibility, and maintainability.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Responsive</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">95+</div>
+                            <div class="stat-label">Pagespeed Score</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">0</div>
+                            <div class="stat-label">Dependencies</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">4.8</div>
+                            <div class="stat-label">UI Rating</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="code-display">
+                        <div class="code-line"><span class="code-comment">// Project Highlights</span></div>
+                        <div class="code-line"><span class="code-keyword">const</span> highlights = [</div>
+                        <div class="code-line">&nbsp;&nbsp;<span class="code-string">"Modern CSS Techniques"</span>,</div>
+                        <div class="code-line">&nbsp;&nbsp;<span class="code-string">"Responsive Design"</span>,</div>
+                        <div class="code-line">&nbsp;&nbsp;<span class="code-string">"Interactive Elements"</span>,</div>
+                        <div class="code-line">&nbsp;&nbsp;<span class="code-string">"Clean Code Structure"</span></div>
+                        <div class="code-line">];</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (123) 456-7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Your City, Country</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+        </div>
+        <p class="copyright">&copy; 2023 Project Gallery Showcase. All rights reserved.</p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
